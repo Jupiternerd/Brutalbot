@@ -48,8 +48,9 @@ bot.on("message", async message => {
     if (message.member.roles.some(role => [botconfig.staff, botconfig.admin].includes(role.name)) ) {
       return;
     } else {
-      errors.warning(message)
       message.delete()
+      errors.warning(message)
+
     }
   }
 }
