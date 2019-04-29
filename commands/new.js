@@ -3,6 +3,7 @@ const botconfig = require("../Utils/botconfig.json");
 const errors = require('../Utils/errors.js')
 
 module.exports.run = async (bot, message, args) => {
+  message.delete()
   let staff = message.guild.roles.find(everyone => everyone.name == botconfig.staff);
   let admin = message.guild.roles.find(everyone => everyone.name == botconfig.admin);
   let role2 = message.guild.roles.find(name => name.name == "@everyone");
