@@ -1,0 +1,31 @@
+{
+  "name": "commandbot",
+  "version": "1.0.0",
+  "description": "Made for testing",
+  "main": "app.js",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "dotenv": "^7.0.0",
+    "moment": "^2.24.0",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/synicalsyntax/discord.js-heroku.git"
+  },
+  "keywords": [
+    "heroku",
+    "discord.js"
+  ],
+  "author": "Shokk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/synicalsyntax/discord.js-heroku/issues"
+  },
+  "homepage": "https://github.com/synicalsyntax/discord.js-heroku#readme"
+}
