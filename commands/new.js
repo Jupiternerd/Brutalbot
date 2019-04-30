@@ -31,7 +31,10 @@ if (!inuse) {
       });
       let ticketopenedEmbed = new Discord.RichEmbed()
       .setTitle("A ticket has been opened")
-      message.channel.send(ticketopenedEmbed)
+      .setColor(botconfig.Tcolor)
+      message.channel.send(ticketopenedEmbed).then(async (eEmbed) => {
+        eEmbed.delete(2000)
+      })
       const embed = new Discord.RichEmbed()
           .setTitle("🎫 Support Ticket" + ` ${message.author.tag}`)
           .addField(`Hello ${message.author.username}!`, `Welcome to your support ticket. A Support Member will be with you shortly!`)
